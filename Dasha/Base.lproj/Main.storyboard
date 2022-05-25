@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dasha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqc-Lf-O0n">
+                                <rect key="frame" x="20" y="84" width="374" height="188"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="eFC-E2-Dq6"/>
+                                </constraints>
+                                <string key="text">У тебя сегодня День Рождения! В этот день мы все знаем что желания должны исполняться! Поэтому я тебе предлагаю загадать желание, которое исполнит "Таинственный Волшебник". Введи желание ниже и нажми кнопку "Исполнить!!"</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поле для ввода желания" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y94-4m-n0i">
+                                <rect key="frame" x="20" y="490" width="374" height="50"/>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Y6o-Zf-ocW"/>
+                                    <constraint firstAttribute="height" constant="50" id="ugj-xf-cXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grj-Du-hqJ">
+                                <rect key="frame" x="20" y="710" width="374" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="A6S-Zj-bSS"/>
+                                    <constraint firstAttribute="width" constant="374" id="dIT-pC-TP9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Исполнить!">
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="22"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="f18-Lu-SbU" kind="modal" id="Csn-KE-9Tw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y94-4m-n0i" firstAttribute="top" secondItem="Cqc-Lf-O0n" secondAttribute="bottom" constant="130" id="9YE-yf-mCD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cqc-Lf-O0n" secondAttribute="trailing" constant="20" id="DKs-jh-303"/>
+                            <constraint firstItem="grj-Du-hqJ" firstAttribute="top" secondItem="Y94-4m-n0i" secondAttribute="bottom" constant="170" id="FO0-Dn-NTg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="grj-Du-hqJ" secondAttribute="trailing" constant="20" id="Gnt-KR-aee"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y94-4m-n0i" secondAttribute="trailing" constant="20" id="QZz-fv-uhS"/>
+                            <constraint firstItem="grj-Du-hqJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UmS-NE-zCc"/>
+                            <constraint firstItem="Cqc-Lf-O0n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WEU-lo-6w8"/>
+                            <constraint firstItem="Y94-4m-n0i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="abG-MV-7am"/>
+                            <constraint firstItem="Cqc-Lf-O0n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="dzK-T4-755"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="grj-Du-hqJ" secondAttribute="bottom" constant="117" id="noZ-Zb-r5V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="Y94-4m-n0i" id="DGc-Fq-9zh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+        <!--View ControllerS-->
+        <scene sceneID="yj3-x1-ykL">
+            <objects>
+                <viewController id="f18-Lu-SbU" customClass="ViewControllerS" customModule="Dasha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wkm-Bp-W7h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1d-7N-SWS">
+                                <rect key="frame" x="20" y="145" width="374" height="190"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="10" height="-1"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmo-jf-ey7">
+                                <rect key="frame" x="20" y="334" width="374" height="146"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="7fm-MQ-kol"/>
+                                    <constraint firstAttribute="width" constant="374" id="w9f-dp-zPb"/>
+                                </constraints>
+                                <string key="text">Желание будет исполнено....но наш Таинственный волшебник куда то пропал...Надо бы найти его. Позвони ему нажав кнопку ниже для того чтобы он исполнил твое желание!</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Исполнить желание именнинцы!!!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0K-O6-HA7">
+                                <rect key="frame" x="20" y="112" width="374" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BTv-gV-oWE"/>
+                                    <constraint firstAttribute="width" constant="374" id="xxI-u6-WkK"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bY-kw-vrW">
+                                <rect key="frame" x="20" y="620" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LP4-M6-sxj"/>
+                                    <constraint firstAttribute="width" constant="374" id="cuY-IG-Nnh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Позвонить Волшебнику!">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone:" destination="f18-Lu-SbU" eventType="touchUpInside" id="1pP-dl-v5n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9ZV-Et-gCX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="D1d-7N-SWS" secondAttribute="trailing" constant="20" id="Ivi-U4-vEB"/>
+                            <constraint firstItem="D1d-7N-SWS" firstAttribute="top" secondItem="9ZV-Et-gCX" secondAttribute="top" constant="101" id="KtR-et-tvD"/>
+                            <constraint firstItem="2bY-kw-vrW" firstAttribute="top" secondItem="Dmo-jf-ey7" secondAttribute="bottom" constant="140" id="Ma0-ox-4gY"/>
+                            <constraint firstItem="D1d-7N-SWS" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="20" id="NE0-1V-yGO"/>
+                            <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="D1d-7N-SWS" secondAttribute="trailing" constant="20" id="PBv-H2-oQX"/>
+                            <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="Dmo-jf-ey7" secondAttribute="trailing" constant="20" id="QTx-RQ-Lve"/>
+                            <constraint firstItem="2bY-kw-vrW" firstAttribute="top" secondItem="D1d-7N-SWS" secondAttribute="bottom" constant="285" id="Xw5-Pw-9pZ"/>
+                            <constraint firstItem="h0K-O6-HA7" firstAttribute="top" secondItem="9ZV-Et-gCX" secondAttribute="top" constant="68" id="c2f-pT-hlV"/>
+                            <constraint firstItem="2bY-kw-vrW" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="20" id="cBZ-MD-XqF"/>
+                            <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="2bY-kw-vrW" secondAttribute="trailing" constant="20" id="gh8-7v-1GY"/>
+                            <constraint firstItem="Dmo-jf-ey7" firstAttribute="top" secondItem="h0K-O6-HA7" secondAttribute="bottom" constant="187" id="ik4-tK-6p6"/>
+                            <constraint firstItem="h0K-O6-HA7" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="20" id="jix-fO-q6K"/>
+                            <constraint firstItem="Dmo-jf-ey7" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="20" id="krt-3W-jV1"/>
+                            <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="h0K-O6-HA7" secondAttribute="trailing" constant="20" id="nfB-WW-lQL"/>
+                            <constraint firstItem="2bY-kw-vrW" firstAttribute="top" secondItem="Dmo-jf-ey7" secondAttribute="bottom" constant="140" id="oag-1X-lM4"/>
+                            <constraint firstItem="D1d-7N-SWS" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="20" id="uX1-q4-aUR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="D1d-7N-SWS" id="v6g-0u-LfO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRg-rD-FdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.69565217391312" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

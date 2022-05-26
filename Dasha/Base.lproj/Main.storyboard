@@ -22,7 +22,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="eFC-E2-Dq6"/>
                                 </constraints>
-                                <string key="text">У тебя сегодня День Рождения! В этот день мы все знаем что желания должны исполняться! Поэтому я тебе предлагаю загадать желание, которое исполнит "Таинственный Волшебник". Введи желание ниже и нажми кнопку "Исполнить!!"</string>
+                                <string key="text">У тебя сегодня День Рождения! В этот день мы знаем что желания должны исполняться! Поэтому я тебе предлагаю загадать желание, которое исполнит "Таинственный Волшебник". Введи желание ниже и нажми кнопку "Исполнить!"</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -85,8 +85,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1d-7N-SWS">
-                                <rect key="frame" x="20" y="145" width="374" height="190"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1d-7N-SWS">
+                                <rect key="frame" x="30" y="145" width="354" height="190"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,11 +135,9 @@
                         <viewLayoutGuide key="safeArea" id="9ZV-Et-gCX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="D1d-7N-SWS" secondAttribute="trailing" constant="20" id="Ivi-U4-vEB"/>
+                            <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="D1d-7N-SWS" secondAttribute="trailing" constant="30" id="BHA-cZ-fmq"/>
                             <constraint firstItem="D1d-7N-SWS" firstAttribute="top" secondItem="9ZV-Et-gCX" secondAttribute="top" constant="101" id="KtR-et-tvD"/>
                             <constraint firstItem="2bY-kw-vrW" firstAttribute="top" secondItem="Dmo-jf-ey7" secondAttribute="bottom" constant="140" id="Ma0-ox-4gY"/>
-                            <constraint firstItem="D1d-7N-SWS" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="20" id="NE0-1V-yGO"/>
-                            <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="D1d-7N-SWS" secondAttribute="trailing" constant="20" id="PBv-H2-oQX"/>
                             <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="Dmo-jf-ey7" secondAttribute="trailing" constant="20" id="QTx-RQ-Lve"/>
                             <constraint firstItem="2bY-kw-vrW" firstAttribute="top" secondItem="D1d-7N-SWS" secondAttribute="bottom" constant="285" id="Xw5-Pw-9pZ"/>
                             <constraint firstItem="h0K-O6-HA7" firstAttribute="top" secondItem="9ZV-Et-gCX" secondAttribute="top" constant="68" id="c2f-pT-hlV"/>
@@ -150,7 +148,7 @@
                             <constraint firstItem="Dmo-jf-ey7" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="20" id="krt-3W-jV1"/>
                             <constraint firstItem="9ZV-Et-gCX" firstAttribute="trailing" secondItem="h0K-O6-HA7" secondAttribute="trailing" constant="20" id="nfB-WW-lQL"/>
                             <constraint firstItem="2bY-kw-vrW" firstAttribute="top" secondItem="Dmo-jf-ey7" secondAttribute="bottom" constant="140" id="oag-1X-lM4"/>
-                            <constraint firstItem="D1d-7N-SWS" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="20" id="uX1-q4-aUR"/>
+                            <constraint firstItem="D1d-7N-SWS" firstAttribute="leading" secondItem="9ZV-Et-gCX" secondAttribute="leading" constant="30" id="vs7-mW-4wM"/>
                         </constraints>
                     </view>
                     <connections>
